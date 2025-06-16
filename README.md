@@ -1,7 +1,7 @@
 # Technical Exercise: Land Cover Mapping Workflow Replication
 ## Expert Annotation Tool for Land Cover Mapping
 
-The land cover mapping workflow outlined in the scientific paper titled "A National-Scale Land Cover Reference Dataset from Local Crowdsourcing Initiatives in Indonesia" consists of two main components: (1) crowdsourced land cover (LC) reference data collection by non-experts (crowd annotations), and (2) LC reference data collection by experts (expert annotations).
+The land cover mapping workflow outlined in the scientific paper titled ["A National-Scale Land Cover Reference Dataset from Local Crowdsourcing Initiatives in Indonesia"](https://www.nature.com/articles/s41597-022-01689-5) consists of two main components: (1) crowdsourced land cover (LC) reference data collection by non-experts (crowd annotations), and (2) LC reference data collection by experts (expert annotations).
 
 This repository aims to replicate a portion of the aforementioned workflow, specifically the expert-based LC reference data collection component. The study area is focused on Sidenreng Rappang Regency for the year 2018. While the tools developed in the original paper are comprehensive, this study proposes a simplified approach by implementing a manual expert annotation system based on Google Earth Engine (GEE) applications.
 

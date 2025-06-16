@@ -12,25 +12,25 @@ I scoped the task to a simplified and localized version of the expert annotation
    * Thoroughly review the source paper’s methodology, focusing on the expert annotation section.
    * Identify key workflows, data dependencies (Sentinel-2, class codes, AOI), and understand GEE-based annotation structure.
 2. Tool Design:
-  * Use Google Earth Engine (GEE) to develop a visual annotation interface.
-  * Focus on the Kabupaten Sidenreng Rappang, South Sulawesi as the area of interest.
-  * Use Sentinel-2 imagery from 2018, with median compositing and cloud masking.
+   * Use Google Earth Engine (GEE) to develop a visual annotation interface.
+   * Focus on the Kabupaten Sidenreng Rappang, South Sulawesi as the area of interest.
+   * Use Sentinel-2 imagery from 2018, with median compositing and cloud masking.
 3. User-Friendly Interface:
-  * Implement simple tools for manual polygon creation, LULC class tagging, and visual interpretation support (indices and color composites).
-4. Data Export:
-  * Allow annotations to be saved/exported by the user to Google Drive or GEE Assets for further processing or use in classification models.
+   * Implement simple tools for manual polygon creation, LULC class tagging, and visual interpretation support (indices and color composites).
+5. Data Export:
+   * Allow annotations to be saved/exported by the user to Google Drive or GEE Assets for further processing or use in classification models.
 
 ### Step Taken (3-Hour log)
 **Hour 1 – Setup, Scoping, and Imagery Preparation**
   * 15 min. Created a public GitHub repository to store code and documentation. Skimmed and analyzed the source paper, with focus on the expert annotation method and interface elements.
   * 15 min. Analyzed the required data sources: Sentinel-2 (2018), AOI boundaries, class labels (17 LULC classes). Searched for the AOI using the GAUL (GADM-like) dataset and filtered by `"ADM2_NAME" = "Sidenreng Rappang"`.
   * 15 min. Filtered Sentinel-2 Surface Reflectance imagery (2018) with cloud masking (QA60). Generated median composite for visualization.
-  * 15 min. Created true color and false color renderings for split panel display.
+  * 15 min. Created true color and false color renderings for split panel display. <br>
 **Hour 2 – UI and Interactive Map Development**
   * 15 min. Designed basic ui.Panel layout for the left panel (descriptions, controls). Created dropdown selector for 17-class LULC scheme.
   * 15 min. Set up split-panel map view (True Color vs. False Color). Synchronized map zoom and extent.
   * 15 min. Added layer selector for optional indices: NDVI, NDWI, NBR. Implemented toggle logic and reactivity.
-  * 15 min. Linked LULC key document (PDF on Google Drive) from the left panel. Added guidance text for annotators.
+  * 15 min. Linked LULC key document (PDF on Google Drive) from the left panel. Added guidance text for annotators. <br>
 **Hour 3 – Annotation and Export System**
   * 30 min. Enabled `ui.Map.drawingTools()` for polygon digitizing. Linked dropdown class selection to drawn polygon as metadata property. Visual feedback on added features (color-coded, optional print to console).
   * 15 min. Added Export to Google Drive feature with filename input. Validated task creation in Tasks tab.

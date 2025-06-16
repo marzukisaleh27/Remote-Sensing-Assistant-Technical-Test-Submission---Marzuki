@@ -26,11 +26,13 @@ I scoped the task to a simplified and localized version of the expert annotation
   * 15 min. Analyzed the required data sources: Sentinel-2 (2018), AOI boundaries, class labels (17 LULC classes). Searched for the AOI using the GAUL (GADM-like) dataset and filtered by `"ADM2_NAME" = "Sidenreng Rappang"`.
   * 15 min. Filtered Sentinel-2 Surface Reflectance imagery (2018) with cloud masking (QA60). Generated median composite for visualization.
   * 15 min. Created true color and false color renderings for split panel display. <br>
+
 **Hour 2 – UI and Interactive Map Development**
   * 15 min. Designed basic ui.Panel layout for the left panel (descriptions, controls). Created dropdown selector for 17-class LULC scheme.
   * 15 min. Set up split-panel map view (True Color vs. False Color). Synchronized map zoom and extent.
   * 15 min. Added layer selector for optional indices: NDVI, NDWI, NBR. Implemented toggle logic and reactivity.
   * 15 min. Linked LULC key document (PDF on Google Drive) from the left panel. Added guidance text for annotators. <br>
+  
 **Hour 3 – Annotation and Export System**
   * 30 min. Enabled `ui.Map.drawingTools()` for polygon digitizing. Linked dropdown class selection to drawn polygon as metadata property. Visual feedback on added features (color-coded, optional print to console).
   * 15 min. Added Export to Google Drive feature with filename input. Validated task creation in Tasks tab.
